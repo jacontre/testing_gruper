@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>gruper-main</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+	<link href="/css/gruper.css" rel="stylesheet">
+
+
+	<style>
+      #map {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+</head>
+
+<body>	<center>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>gruper</h1>
+		<a href="/login"><p align="right" class = "u_name" id = "username">temp Text</p> </a>
+
+		</div>
+        <div class="searchTime">
+          </br>
+            <label for="searchTime">Find events happening within:</label>
+          <select name="timeToSearch" id="timeValue">
+		   <option value="1" selected>Today</option>
+           <option value="3">3 days</option>
+           <option value="7">1 week</option>
+           <option value="14">2 weeks</option>
+           <option value="30">1 month</option>
+        </select>
+        </div>	
+		<div id="tfheader">
+			<input type="text" name="q" size="21" maxlength="120" id="searchStr" placeholder="Search Events"></input>
+			<input type="submit" value="search" class="btn btn-info btn-large" id="submit_button"> </input>
+		</div>	
+		</br>
+		
+		<div id="map"></div>
+		
+		</br>
+		
+		<div id="loginbuttons">
+<!--
+			<a href="/create"> <button id="newEvent" type="button" class="btn btn-info btn-large">Create New Event</button></a>
+
+			<a href="/joined"> <button id="viewEvent" type="button" class="btn btn-info btn-large">Events You've Joined</button></a>
+-->
+		</div>
+	</div> 
+
+	
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/gruperScript.js"></script>
+  <script src="js/gruperMaps.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+  <script src="https://code.jquery.com/jquery.js"></script>
+  
+</center> </body>
+</html>

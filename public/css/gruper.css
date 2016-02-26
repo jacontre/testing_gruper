@@ -1,0 +1,83 @@
+/* applies to anything of class "example-class-selector" */
+.example-class-selector {
+	margin-top: 2em;
+}
+
+/* applies to any <p> descendants of an element of class "example-class-selector" */
+.example-class-selector p {
+	/* Colors are in hexadecimal: http://www.colorpicker.com/ */	
+	color: #CC00AA;
+}
+
+h2, h3, h4, h5 {
+	color: #003366;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+div.friend {
+	width: 300px;
+}
+
+.jumbotron {
+height: 50px;
+padding-top: 0;
+padding-bottom: 0;
+background-color: #003366;
+color: white;
+}
+
+.u_name {
+  color: #003366;
+}
+
+.alignleft {
+  float: left;
+  width:33.33333%;
+  text-align:left;
+}
+
+.aligncenter {
+  float: left;
+  width:33.33333%;
+  text-align:center;
+}
+
+.alignright {
+ float: left;
+ width:33.33333%;
+ text-align:right;
+}​
+
+.thumbnail {
+  margin-top: 20px;
+  width: 1500px;
+}
+
+#joined_back {
+  margin-left: 15px;
+}
+
+#login_back {
+  margin-left: 15px;
+}
+
+#loginModal{
+  margin-right: 0px;
+}
+
+a.thumbnail{
+  padding-left: 20px;
+  padding: 15px;
+  text-align: left;
+  color: #003366;
+}
+
+.join_event{
+  cursor: pointer;
+  float: right;
+  padding: 2px 15px;
+}
+

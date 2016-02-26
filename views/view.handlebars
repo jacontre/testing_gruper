@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>gruper-main</title>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<link href="/css/bootstrap.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.css" rel="stylesheet">
+	<link href="/css/gruper.css" rel="stylesheet">
+
+</head>
+
+<body>	<center>
+	<div class="container">
+		<div class="jumbotron">
+			<h1>gruper</h1>
+		</div>
+
+		<div class="container-fluid">
+  			<h3>View Event</h3></center> 
+			<a href="/" class="btn btn-info btn-large" id = "joined_back"><i class="icon-white icon-chevron-left"></i> Back</a>  	
+			<center>	<br>
+			{{#each events}}
+				<div> 
+				<a href="" class="thumbnail"> 
+
+					<div class = "info_shown">
+						<b id="title">{{title}}</b> 
+						<input type="button" value="join" id="join_this" />
+					</div>
+
+					<div class = "info"> 
+						<p> Location: <div id ="location">{{location}}</div></p>
+						<p> Description: <div id ="description">{{description}}</div></p>
+						<p> Date: <div id ="date1">{{date1}}</div></p>
+						<p> Start Time: <div id ="hrs1">{{hrs1}}</div>:<div id ="minute1">{{minute1}}</div> <div id ="ampm1">{{ampm1}}</div> </p>
+						<p> End Time: <div id ="hrs2">{{hrs2}}</div>:<div id ="minute2">{{minute2}}</div> <div id ="ampm2">{{ampm2}}</div> </p>
+						<p> Capacity: <div id ="capacity">{{capacity}}</div> </p>
+					</div>
+
+					</a>
+				</div>					
+			{{/each}}
+				
+		</div>
+	</div>
+
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="js/jquery-1.11.0.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+  
+  <script src="js/gruperScript.js"></script>
+  
+</center> 
+</body>
+</html>
